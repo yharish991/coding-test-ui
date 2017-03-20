@@ -1,0 +1,20 @@
+@import './variables';
+
+html * {
+  font-size: 1.5rem !important;
+  color: $font-color !important;
+  font-family: "Helvetica Neue Regular", Helvetica, Arial, sans-serif !important;
+}
+
+input,
+textarea {
+  background-color: $background;
+  color: $font-color !important;
+  border: 1px solid $border-color;
+  outline: none !important;
+  padding: 5px !important;
+}
+
+.form-error {
+  border-color: $error-color !important;
+}

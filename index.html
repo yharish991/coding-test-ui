@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<!-- define angular app -->
+<html ng-app="userApp">
+
+<head>
+  <!-- CSS -->
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+
+  <!-- Angular -->
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
+
+  <!--Angular App-->
+  <script src="app.js"></script>
+
+  <!--Config-->
+  <script src="config/envify.js"></script>
+
+  <!--Controllers-->
+  <script src="controllers/MainController.js"></script>
+
+  <!--Services-->
+  <script src="services/UsersService.js"></script>
+</head>
+
+<!-- define angular controller -->
+<body ng-controller="MainController" style="background-color: #272E36">
+  <div id="main">
+    <div ng-view></div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,101 @@
+<div style="width: 100%;">
+	<div class="field-group-left">
+		<form role="form" name="newUserForm" id="add-user-form" novalidate>
+			<div class="field-group">
+				<label for="firstName" class="col-sm-4" style="padding-top: 5px">First Name <sup>*</sup> :</label>
+				<div class="col-sm-8">
+					<input type="text"  style="width: 70%" id="firstName"  name="firstName" placeholder="First Name"
+								 ng-model="user.firstName"
+								 ng-class="{ 'form-error' : newUserForm.firstName.$invalid && !newUserForm.firstName.$pristine }"
+								 ng-maxlength="40"
+								 maxlength="40"
+								 ng-required=true
+								 required>
+					</input>
+				</div>
+			</div>
+			<div class="field-group">
+				<label for="lastName" class="col-sm-4" style="padding-top: 5px">Last Name <sup>*</sup> :</label>
+				<div class="col-sm-8">
+					<input type="text" style="width: 70%" id="lastName" name="lastName" placeholder="Last Name"
+								 ng-model="user.lastName"
+								 ng-class="{ 'form-error' : newUserForm.lastName.$invalid && !newUserForm.lastName.$pristine }"
+								 ng-maxlength="30"
+								 maxlength="30"
+								 ng-required=true
+								 required>
+					</input>
+				</div>
+			</div>
+			<div class="field-group">
+				<label for="company" class="col-sm-4" style="padding-top: 5px">Company <sup>*</sup> :</label>
+				<div class="col-sm-8">
+					<input type="text" style="width: 70%" id="company" name="company" placeholder="Company"
+								 ng-model="user.company"
+								 ng-class="{ 'form-error' : newUserForm.company.$invalid && !newUserForm.company.$pristine }"
+								 ng-maxlength="50"
+								 maxlength="50"
+								 ng-required=true
+								 required>
+					</input>
+				</div>
+			</div>
+			<div class="field-group" style="height: 80px;">
+				<label for="address" class="col-sm-4" style="padding-top: 5px">Address <sup>*</sup> :</label>
+				<div class="col-sm-8">
+					<textarea class="input-item" style="width:70%; resize: none" name="address" id="address" rows="3" placeholder="Address"
+									ng-model="user.address"
+									ng-class="{ 'form-error' : newUserForm.address.$invalid && !newUserForm.address.$pristine }"
+									ng-maxlength="150"
+									maxlength="150"
+									ng-required=true
+									required>
+					</textarea>
+				</div>
+			</div>
+			<div class="field-group">
+				<div class="col-sm-4"></div>
+				<div class="col-sm-8">
+					<button class="btn btn-save pull-right" type="button"
+									ng-click="createUser(newUserForm.$valid)"
+									ng-disabled="newUserForm.$invalid"
+									style="border:1px solid #1BAC72;border-radius: 0;width: 100px;background-color: #1BAC72;color: #424952 !important; margin-right: 30%;outline: none !important;">Submit</button>
+				</div>
+			</div>
+		</form>
+	</div>
+	<div class="field-group-right">
+		<div class="field-group">
+			<label for="firstName" class="col-sm-4" style="padding-top: 5px">First Name :</label>
+			<div class="col-sm-8">
+				<div style="width: 70%;">
+					{{userProfile.firstName}}
+				</div>
+			</div>
+		</div>
+		<div class="field-group">
+			<label for="lastName" class="col-sm-4" style="padding-top: 5px">Last Name :</label>
+			<div class="col-sm-8">
+				<div style="width: 70%;">
+					{{userProfile.lastName}}
+				</div>
+			</div>
+		</div>
+		<div class="field-group">
+			<label for="company" class="col-sm-4" style="padding-top: 5px">Company :</label>
+			<div class="col-sm-8">
+				<div style="width: 70%;">
+					{{userProfile.company}}
+				</div>
+			</div>
+		</div>
+		<div class="field-group" style="height: 80px;">
+			<label for="address" class="col-sm-4" style="padding-top: 5px">Address :</label>
+			<div class="col-sm-8">
+				<div style="width: 70%;">
+					{{userProfile.address}}
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

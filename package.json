@@ -1,0 +1,31 @@
+{
+  "name": "coding-test-ui",
+  "version": "0.0.1",
+  "description": "UI component",
+  "scripts": {
+    "test": "gulp test",
+    "build:css": "gulp sass"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yharish991/coding-test-ui.git"
+  },
+  "devDependencies": {
+    "eslint": "^2.13.1",
+    "eslint-config-airbnb-base": "^3.0.1",
+    "eslint-plugin-import": "^1.8.1",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-clean-css": "^2.0.11",
+    "gulp-concat": "^2.6.1",
+    "gulp-eslint": "^2.0.0",
+    "gulp-eslint-threshold": "^0.1.1",
+    "gulp-sass": "^2.3.2",
+    "gulp-scss-lint": "^0.4.0",
+    "gulp-webdriver": "^2.0.1",
+    "selenium-standalone": "^5.1.0",
+    "wdio-cucumber-framework": "^0.2.4",
+    "wdio-spec-reporter": "0.0.3",
+    "webdriverio": "^4.1.9"
+  }
+}

@@ -1,0 +1,24 @@
+html * {
+  font-size: 1.5rem !important;
+  color: #fff !important;
+  font-family: "Helvetica Neue Regular", Helvetica, Arial, sans-serif !important; }
+
+input, textarea {
+  background-color: #272e36;
+  color: #fff !important;
+  border: 1px solid #636f7c;
+  outline: 0 !important;
+  padding: 5px !important; }
+
+.form-error {
+  border-color: #fb6e5f !important; }
+
+.field-group-left, .field-group-right {
+  float: left;
+  width: 50%;
+  padding-left: 20px;
+  margin-top: 200px; }
+
+.field-group {
+  height: 40px;
+  margin-bottom: 20px; }
