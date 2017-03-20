@@ -22,10 +22,6 @@
     "gulp-eslint-threshold": "^0.1.1",
     "gulp-sass": "^2.3.2",
     "gulp-scss-lint": "^0.4.0",
-    "gulp-webdriver": "^2.0.1",
-    "selenium-standalone": "^5.1.0",
-    "wdio-cucumber-framework": "^0.2.4",
-    "wdio-spec-reporter": "0.0.3",
-    "webdriverio": "^4.1.9"
+    "gulp-webdriver": "^2.0.1"
   }
 }
