@@ -9,7 +9,9 @@ UI Component
 
 2. Install basic packages by running `yarn install`
 
-4. Open `index.html` in the browser
+4. Install `http-server` using `yarn global add http-server`
+
+5. To start the app `http-server -o`
 
 
 ## Gulp tasks
